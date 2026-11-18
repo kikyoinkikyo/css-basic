@@ -1,0 +1,144 @@
+/* css 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family:
+    "Pretendard GOV Variable",
+    "Pretendard GOV",
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-size: 16px;
+  color: #29292c;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  background-color: #fff;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit; /* 폰트 종류·크기·굵기·줄간격 상속 */
+  color: inherit; /* 글자색 상속 */
+  line-height: inherit;
+  text-align: center;
+  cursor: pointer;
+  appearance: none; /* 브라우저/OS 기본 모양 제거 */
+  -webkit-appearance: none;
+}
+button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+.wrap {
+  width: 100%;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background-color: aquamarine;
+}
+.header .inner {
+  /* position: relative; */
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  background-color: thistle;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  position: relative;
+}
+.nav {
+  /* position: relative; */
+  height: 100%;
+}
+.depth1-wrap {
+  /* position: relative; */
+  height: 100%;
+  display: flex;
+  gap: 32px;
+}
+.depth1-travel {
+  /* position: relative; */
+}
+.depth1-rec {
+  /* position: relative; */
+}
+.depth1-theme {
+  /* position: relative; */
+}
+.depth1-area {
+  /* position: relative; */
+}
+.add-type {
+  /* position: relative; */
+}
+.depth1-wrap > li > a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+.depth2-wrap {
+  displqy: none;
+}
+.utils {
+  position: relative;
+}
+
+.main {
+  width: 100%;
+  background-color: wheat;
+}
+.footer {
+  width: 100%;
+  background-color: yellowgreen;
+}
