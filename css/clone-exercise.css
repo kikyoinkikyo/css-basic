@@ -130,8 +130,36 @@ button:focus-visible {
 .depth2-wrap {
   displqy: none;
 }
-.utils {
+.header-util {
   position: relative;
+  display: flex;
+  height: 38px;
+  align-items: center;
+  gap: 12px;
+}
+.util-sub {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+}
+
+.language-wrap {
+  position: relative;
+  background-color: blueviolet;
+  height: 100%;
+}
+.language-wrap > button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.language-layer {
+  position: absolute;
+  left: 0;
+  top: 38px;
+  background-color: #fff;
 }
 
 .main {

@@ -31,9 +31,17 @@
           <nav class="nav">
             <ul class="depth1-wrap">
               <li class="depth1-travel">
-                <a href="#">여행</a>
+                <a href="#" class="depth1-btn">
+                  여행
+                  <span class="icon-pg-chevron-md">
+                    <img
+                      src="assets/icons/guide_chevron_dw24 (2).svg"
+                      alt="다운 아이콘"
+                    />
+                  </span>
+                </a>
                 <!-- depth2 -->
-                <div>
+                <div class="depth2-wrap" id="depth2-1">
                   <!-- inner -->
                   <div>
                     <!-- sub1 -->
@@ -67,11 +75,22 @@
                     </div>
                   </div>
                 </div>
-              </liㅇ>
+              </li>
               <li class="depth1-rec">
-                <a href="#">추천</a>
+                <a href="#" class="depth1-btn">
+                  추천
+                  <span class="icon-pg-ai">
+                    <img src="assets/icons/text_ai15.svg" alt="ai아이콘" />
+                  </span>
+                  <span class="icon-pg-chevron-md">
+                    <img
+                      src="assets/icons/guide_chevron_dw24 (2).svg"
+                      alt="다운 아이콘"
+                    />
+                  </span>
+                </a>
                 <!-- depth2 -->
-                <div>
+                <div class="depth2-wrap" id="depth2-2">
                   <!-- sub-1 -->
                   <div>
                     <a href="#">AI콕콕</a>
@@ -95,13 +114,61 @@
           </nav>
 
           <!-- utils -->
-          <div class="utils">
-            <button>검색</button>
-            <div>
-              <a href="#">이용 가이드</a>
-              <button>로그인</button>
-              <a href="#">여행지도</a>
-              <div>언어선택</div>
+          <div class="header-util">
+            <button class="icon-pg btn-search" aria-label="검색">
+              <img
+                src="assets/icons/guide_search24 (1).svg"
+                alt="검색 아이콘"
+              />
+            </button>
+            <div class="util-sub">
+              <a href="#" aria-label="이용 가이드" class="icon-pg btn-guide"
+                ><img
+                  src="assets/icons/menu_info20.svg"
+                  alt="이용 가이드 아이콘"
+                />
+              </a>
+              <button aria-label="로그인" class="icon-pg btn-login profile">
+                <img src="assets/icons/login24.svg" alt="로그인 아이콘" />
+              </button>
+              <a href="#" aria-label="여행지도" class="icon-pg btn-map">
+                <img src="assets/icons/travelmap24.svg" alt="여행지도 아이콘" />
+              </a>
+              <div class="language-wrap">
+                <button aria-label="언어선택">
+                  <span class="icon-pg btn-lang"
+                    ><img src="assets/icons/lanquage20.svg" alt="언어 아이콘"
+                  /></span>
+                  <span class="language">한국어</span>
+                  <span class="icon-pg-chevron-sm">
+                    <img
+                      src="assets/icons/guide_chevron_dw24 (2).svg"
+                      alt="다운 아이콘"
+                    />
+                  </span>
+                </button>
+                <div class="language-layer">
+                  <ul>
+                    <li><a href="#">한국어</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">日本語</a></li>
+                    <li><a href="#">中文 ( 简体 )</a></li>
+                    <li><a href="#">中文 ( 繁體 )</a></li>
+                    <li>
+                      <a href="#">Deutsch</a>
+                    </li>
+                    <li>
+                      <a href="#">Français</a>
+                    </li>
+                    <li>
+                      <a href="#">Español</a>
+                    </li>
+                    <li>
+                      <a href="#">Pусский</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
