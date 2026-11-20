@@ -71,6 +71,7 @@ button:focus-visible {
 .wrap {
   width: 100%;
 }
+/* header styling start  */
 .header {
   position: relative;
   width: 100%;
@@ -128,7 +129,13 @@ button:focus-visible {
   line-height: 1;
 }
 .depth2-wrap {
-  displqy: none;
+  /* displqy: none; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #b4adad;
+  z-index: 1;
 }
 .header-util {
   position: relative;
@@ -161,12 +168,32 @@ button:focus-visible {
   top: 38px;
   background-color: #fff;
 }
+/* header styling end */
 
+/* main styling start  */
 .main {
   width: 100%;
   background-color: wheat;
 }
+.sw-hero .swiper-slide {
+  position: relative;
+  width: 940px;
+  height: 626px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.hero-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hero-img img {
+}
+/* main styling end  */
+
+/* footer styling start  */
 .footer {
   width: 100%;
   background-color: yellowgreen;
 }
+/* footer styling end */
