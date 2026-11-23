@@ -1,4 +1,4 @@
-/* css 초기화 */
+/* CSS 초기화 */
 * {
   margin: 0;
   padding: 0;
@@ -8,41 +8,25 @@
 *::after {
   box-sizing: border-box;
 }
-
 html {
   overflow-x: hidden;
 }
 body {
-  font-family:
-    "Pretendard GOV Variable",
-    "Pretendard GOV",
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    Roboto,
-    "Helvetica Neue",
-    "Segoe UI",
-    "Apple SD Gothic Neo",
-    "Noto Sans KR",
-    "Malgun Gothic",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-size: 16px;
-  color: #29292c;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-  background-color: #fff;
+  font-family: var(--font-base);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+  color: var(--color-text);
+  line-height: var(--lh-base);
+  letter-spacing: var(--ls-base);
+  background-color: var(--color-white);
 }
-
 ul,
 li {
-  list-style-type: none;
+  list-style: none;
 }
 
 a {
-  color: #000;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -50,7 +34,6 @@ img {
   vertical-align: middle;
   border: 0;
 }
-
 button {
   margin: 0;
   padding: 0;
@@ -65,13 +48,16 @@ button {
   -webkit-appearance: none;
 }
 button:focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #000;
   outline-offset: 2px;
 }
+
+/* styling */
 .wrap {
   width: 100%;
 }
-/* header styling start  */
+
+/* header styling start */
 .header {
   position: relative;
   width: 100%;
@@ -105,6 +91,8 @@ button:focus-visible {
 .depth1-travel {
   /* position: relative; */
 }
+.depth1-btn {
+}
 .depth1-rec {
   /* position: relative; */
 }
@@ -117,19 +105,20 @@ button:focus-visible {
 .add-type {
   /* position: relative; */
 }
+
 .depth1-wrap > li > a {
   display: flex;
   height: 100%;
   align-items: center;
   gap: 10px;
   padding: 0 10px;
-  font-size: 20px;
+  font-size: var(--fs-lg);
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1;
 }
 .depth2-wrap {
-  /* displqy: none; */
+  /* display: none; */
   position: absolute;
   top: 100%;
   left: 0;
@@ -137,6 +126,7 @@ button:focus-visible {
   background-color: #b4adad;
   z-index: 1;
 }
+
 .header-util {
   position: relative;
   display: flex;
@@ -151,7 +141,6 @@ button:focus-visible {
   gap: 4px;
   height: 100%;
 }
-
 .language-wrap {
   position: relative;
   background-color: blueviolet;
@@ -166,11 +155,11 @@ button:focus-visible {
   position: absolute;
   left: 0;
   top: 38px;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 /* header styling end */
 
-/* main styling start  */
+/* main styling start */
 .main {
   width: 100%;
   background-color: wheat;
@@ -179,21 +168,98 @@ button:focus-visible {
   position: relative;
   width: 940px;
   height: 626px;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
 }
-.hero-img {
+.sw-hero .hero-img {
   display: block;
   width: 100%;
   height: 100%;
 }
-.hero-img img {
+.sw-hero .hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-/* main styling end  */
+.sw-hero .swiper-slide a {
+  position: absolute;
+  left: var(--space-12);
+  bottom: var(--space-12);
+  width: 630px;
+  /* z-index: 5; */
+}
+.sw-hero .swiper-slide a strong {
+  display: block;
+  font-size: var(--fs-display);
+  font-weight: var(--fw-extrabold);
+  line-height: var(--lh-tight);
+  color: var(--color-white);
+  margin-top: 40px;
+}
+.sw-hero .swiper-slide a em {
+  display: block;
+  font-size: var(--fs-lg);
+  font-style: normal;
+  color: var(--color-white-75);
+  padding-top: 9px;
+}
+.sw-hero .swiper-slide a .view {
+  display: inline-flex;
+  /* width: fit-content; */
+  align-items: center;
+  gap: 3px;
+  height: 32px;
+  padding: 0 16px;
+  font-size: var(--fs-sm);
+  color: var(--color-white);
+  border: 1px solid var(--color-white-50);
+  border-radius: var(--radius-sm);
+  margin-top: 31px;
+}
+.sw-hero .swiper-slide a .view .rt {
+  width: var(--icon-sm);
+  height: var(--icon-sm);
+  transform: rotate(-90deg);
+}
+.sw-hero .swiper-slide a .view svg {
+  width: 100%;
+  height: 100%;
+}
+.sw-hero .swiper-slide a .view svg path {
+  stroke: currentColor;
+  stroke-width: 2px;
+}
 
-/* footer styling start  */
+.sw-hero .nav-btn .btn-pg-icon-full-lg {
+  width: var(--btn-icon-lg);
+  height: var(--btn-icon-lg);
+  border-radius: var(--radius-full);
+  background-color: var(--color-black-40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+}
+.sw-hero .nav-btn .btn-pg-icon-full-lg .icon-pg-arwright-lg {
+  width: var(--icon-md);
+  height: var(--icon-md);
+}
+.sw-hero .nav-btn .btn-pg-icon-full-lg .icon-pg-arwright-lg.lt {
+  transform: rotate(-180deg);
+}
+.sw-hero .nav-btn .btn-pg-icon-full-lg .icon-pg-arwright-lg svg {
+  width: 100%;
+  height: 100%;
+}
+.sw-hero .nav-btn .btn-pg-icon-full-lg .icon-pg-arwright-lg svg path {
+  stroke: currentColor;
+  stroke-width: 2.5px;
+}
+/* main styling end */
+
+/* footer styling start */
 .footer {
   width: 100%;
-  background-color: yellowgreen;
+  background-color: greenyellow;
 }
 /* footer styling end */

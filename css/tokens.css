@@ -1,0 +1,81 @@
+/* =========================================================
+   tokens.css — 디자인 토큰 (CSS 변수 모음)
+
+   - 여러 곳에서 반복되는 값(색, 글자 크기, 모서리, 간격 …)을
+     이름 붙여 한곳에 모아 둔 파일이에요.
+   - 사용법:  color: var(--color-text);
+   - 값을 바꾸고 싶으면 이 파일만 고치면, 쓰는 곳 전체가 함께 바뀌어요.
+   - 이름 규칙: --분류-역할  (케밥 케이스)
+   - 한 영역에서만 쓰는 값(예: 히어로 카드 940px)은 여기 넣지 않고,
+     그 영역 선택자 안에서 변수로 만들어요. (예: .sw-hero { --hero-w: 940px; })
+
+   값의 출처: 지금까지 css/clone-exercise.css에 쓴 값 +
+             docs/reference/hero.md 의 측정값
+   ========================================================= */
+
+:root {
+  /* ---------- 색 (color) ---------- */
+  --color-text: #29292c; /* 기본 글자색 */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-white-75: rgba(255, 255, 255, 0.75); /* 사진 위 부제목 */
+  --color-white-50: rgba(255, 255, 255, 0.5); /* 사진 위 얇은 테두리 */
+  --color-black-40: rgba(0, 0, 0, 0.4); /* 사진 위 원형 버튼 배경 */
+  --color-focus: #000; /* 키보드 포커스 테두리 */
+
+  /* ---------- 글꼴 (font) ---------- */
+  --font-base:
+    "Pretendard GOV Variable", "Pretendard GOV", -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  /* 글자 크기 (font-size) */
+  --fs-sm: 14px; /* 작은 버튼 글자 */
+  --fs-base: 16px; /* 본문 */
+  --fs-lg: 20px; /* 메뉴, 부제목 */
+  --fs-display: 40px; /* 히어로 제목 */
+
+  /* 글자 굵기 (font-weight) */
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-extrabold: 800;
+
+  /* 줄 간격 (line-height) — 단위 없이: 글자 크기의 몇 배 */
+  --lh-tight: 1.2;
+  --lh-base: 1.6;
+
+  /* 자간 (letter-spacing) */
+  --ls-base: -0.02em;
+
+  /* ---------- 간격 (space) — 4px 단위 ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  /* ---------- 모서리 (radius) ---------- */
+  --radius-sm: 2px; /* 작은 버튼 */
+  --radius-lg: 12px; /* 카드 */
+  --radius-full: 999px; /* 원, 알약 모양 */
+
+  /* ---------- 크기 (size) ---------- */
+  --icon-sm: 16px;
+  --icon-md: 24px;
+  --btn-icon-lg: 56px; /* 원형 아이콘 버튼 */
+
+  /* 아이콘 선 굵기 (SVG stroke-width) */
+  --stroke-icon-sm: 2px; /* 작은 아이콘 (예: 자세히 보기 꺾쇠) — 개발자 도구로 재확인 필요 */
+  --stroke-slide-nav: 2.5px; /* 슬라이드 이전·다음 버튼 화살표 — 개발자 도구로 확인함 */
+
+  /* ---------- 레이아웃 (layout) ---------- */
+  --layout-max: 1280px; /* 가운데 콘텐츠 최대 너비 */
+  --header-height: 90px;
+
+  /* ---------- 쌓임 순서 (z-index) ---------- */
+  --z-dropdown: 10; /* 하위 메뉴, 언어 선택 목록 */
+  --z-header: 100;
+}
