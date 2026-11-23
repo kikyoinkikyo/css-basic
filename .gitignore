@@ -67,3 +67,4 @@ dist/
 *.bak
 private/
 
+.DS_Store
