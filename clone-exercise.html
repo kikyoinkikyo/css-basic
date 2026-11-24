@@ -365,16 +365,48 @@
               <div class="rolling">
                 <button class="icon-pg-play" aria-label="일시정지">
                   <span class="stop">
-                    <img
-                      src="assets/icons/guide_stop24.svg"
-                      alt="일시정지 아이콘"
-                    />
+                    <!-- guide_stop24.svg -->
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <rect
+                        x="5"
+                        y="3"
+                        width="5"
+                        height="18"
+                        rx="2.5"
+                        fill="#3D3D43"
+                      />
+                      <rect
+                        x="14"
+                        y="3"
+                        width="5"
+                        height="18"
+                        rx="2.5"
+                        fill="#3D3D43"
+                      />
+                    </svg>
                   </span>
                   <span class="play">
-                    <img
-                      src="assets/icons/guide_play24.svg"
-                      alt="재생 아이콘"
-                    />
+                    <!-- guide_play24.svg -->
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20.2589 10.7397C21.247 11.3156 21.247 12.6844 20.2589 13.2603L7.35603 20.781C6.32416 21.3824 5 20.6741 5 19.5207L5 4.4793C5 3.32588 6.32416 2.61757 7.35604 3.21902L20.2589 10.7397Z"
+                        fill="#3D3D43"
+                      />
+                    </svg>
                   </span>
                 </button>
               </div>
@@ -382,75 +414,244 @@
           </div>
         </section>
 
-        <!-- 빠른메뉴 영역 -->
-        <section>
-          <h3>
-            완벽한 여행 준비를 위한
-            <strong>구석구석 서비스</strong>
-            <!-- 빠른 메뉴 목록, 모바일에서는 가로 슬라이드 -->
-            <div>
-              <div>
-                <div>
-                  <a href="#">디지털관광주민증</a>
-                </div>
-                <div>
-                  <a href="#">대한민국 반값여행</a>
-                </div>
-                <div>
-                  <a href="#">지역 인기 음식점</a>
-                </div>
-                <div>
-                  <a href="#">가볼래-터</a>
-                </div>
-                <div>
-                  <a href="#">배지랜드</a>
-                </div>
-                <div>
-                  <a href="#">축제달력</a>
-                </div>
-                <div>
-                  <a href="#">여행코스</a>
-                </div>
-                <div>
-                  <a href="#">여행상품</a>
-                </div>
-                <div>
-                  <a href="#">여행가이드북</a>
-                </div>
+        <!-- 빠른메뉴 영역 (2026-11-24 원본 HTML 구조 기준) -->
+        <section class="main-quick-nav">
+          <h3>완벽한 여행 준비를 위한 <strong>구석구석 서비스</strong></h3>
+          <!-- 빠른 메뉴 목록: Swiper 구조, 모바일에서는 가로 슬라이드 -->
+          <div class="swiper sw-quick">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide-active">
+                <a href="#">
+                  <span class="icon">
+                    <img src="assets/images/main_quick_menu7.png" alt="" />
+                  </span>
+                  <strong>디지털관광주민증</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="icon">
+                    <img src="assets/images/main_quick_menu9.png" alt="" />
+                  </span>
+                  <strong>대한민국 반값여행</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="icon">
+                    <img src="assets/images/main_quick_menu2.png" alt="" />
+                  </span>
+                  <strong>지역 인기 음식점</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="icon">
+                    <img src="assets/images/main_quick_menu3.png" alt="" />
+                  </span>
+                  <strong>가볼래-터</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="icon">
+                    <img src="assets/images/main_quick_menu4.png" alt="" />
+                  </span>
+                  <strong>배지랜드</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="icon">
+                    <img src="assets/images/main_quick_menu5.png" alt="" />
+                  </span>
+                  <strong>축제달력</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="icon">
+                    <img src="assets/images/main_quick_menu1.png" alt="" />
+                  </span>
+                  <strong>여행코스</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="icon">
+                    <img src="assets/images/main_quick_menu6.png" alt="" />
+                  </span>
+                  <strong>여행상품</strong>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <span class="icon">
+                    <img src="assets/images/main_quick_menu8.png" alt="" />
+                  </span>
+                  <strong>여행가이드북</strong>
+                </a>
               </div>
             </div>
-          </h3>
+          </div>
         </section>
 
-        <!-- AI기사 및 사용후기 영역 -->
-        <section>
-          <!-- section title -->
-          <div>
+        <!-- AI기사 및 사용후기 영역 (2026-11-24 원본 구조 기준, docs/reference/ai-digest.md 참고) -->
+        <section class="ai-digest">
+          <!-- 제목 줄 -->
+          <div class="title-wrap">
             <h3>
-              AI가 지금 막,
-              <strong>여행기사ㆍ사용자 후기를 요약했어요.</strong>
+              AI가 지금 막, <strong>여행기사ㆍ사용자 후기를 요약했어요.</strong>
             </h3>
-            <button>인포메이션</button>
+            <button class="icon-pg-info-md" aria-label="AI 요약 안내">
+              <!-- 아이콘 자리: 원본 icon_pg_info_md (파일 없음) -->
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="32" height="32" rx="16" fill="#949499" />
+                <path
+                  d="M15.7759 10.272C15.2159 10.272 14.7439 10.096 14.3599 9.744C13.9919 9.376 13.8079 8.928 13.8079 8.4C13.8079 7.872 13.9919 7.432 14.3599 7.08C14.7439 6.728 15.2159 6.552 15.7759 6.552C16.3519 6.552 16.8239 6.728 17.1919 7.08C17.5759 7.432 17.7679 7.872 17.7679 8.4C17.7679 8.928 17.5759 9.376 17.1919 9.744C16.8239 10.096 16.3519 10.272 15.7759 10.272ZM12 24V21.792H14.7439V15.096C14.7439 14.568 14.4879 14.304 13.9759 14.304H12V12.096H14.4319C15.4239 12.096 16.1439 12.328 16.5919 12.792C17.0559 13.24 17.2879 13.96 17.2879 14.952V21.792H19.9999V24H12Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <!-- 설명 말풍선: 평소에는 숨김, JS 단계에서 열고 닫기 -->
+            <div class="wrap-layerpop ui-pg-tooltip">
+              <div class="layerpop">
+                <div class="cont">
+                  <strong class="stit">‘여행기사’AI 요약</strong>
+                  <p>AI를 활용하여 여행기사의 요약 정보를 제공합니다.</p>
+                  <strong class="stit">‘사용자 후기’AI 요약</strong>
+                  <p>
+                    AI를 활용하여 여행지에 대한 사용자 댓글을 요약하여
+                    제공합니다.
+                  </p>
+                </div>
+                <button class="close" aria-label="닫기">
+                  <span></span>
+                </button>
+              </div>
+            </div>
           </div>
-          <!-- swiper slide -->
-          <div>
-            <!-- 이미지 슬라이드 -->
-            <div>
-              <!-- AI기사요약/후기 15개 있음 -->
-            </div>
-            <!-- 이전 다음 버튼 -->
-            <div>
-              <div>
-                <button>이전</button>
+          <!-- 카드 슬라이드: Swiper 구조, 원본 15장 중 3장만 (정지 화면용) -->
+          <div class="swiper sw-ai">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide-active">
+                <div class="cont">
+                  <em>
+                    <!-- 아이콘 자리: 원본 icon_filetext_sm (파일 없음) -->
+                    <span></span>
+                    여행기사
+                  </em>
+                  <div class="tit">
+                    <strong
+                      >시와 기도, 그림이 머문 자리 따라 걷는 용인 여행</strong
+                    >
+                  </div>
+                  <p>
+                    (연습용 문구) 여행기사를 AI가 요약한 내용이 들어가는
+                    자리예요. 원본은 여섯 줄이 넘으면 말줄임표로 잘라요.
+                  </p>
+                  <span class="thumbs">
+                    <img src="assets/images/hero_img_1_4.png" alt="" />
+                  </span>
+                  <a href="#"><span>바로가기</span></a>
+                </div>
               </div>
-              <div>
-                <button>다음</button>
+              <div class="swiper-slide">
+                <div class="cont">
+                  <em>
+                    <!-- 아이콘 자리: 원본 icon_filetext_sm (파일 없음) -->
+                    <span></span>
+                    사용자 후기
+                  </em>
+                  <div class="tit">
+                    <strong>강화산성</strong>
+                  </div>
+                  <p>
+                    (연습용 문구) 사용자 후기를 AI가 요약한 내용이 들어가는
+                    자리예요. 제목이 짧은 카드도 있어요.
+                  </p>
+                  <span class="thumbs">
+                    <img src="assets/images/hero_img_1_5.png" alt="" />
+                  </span>
+                  <a href="#"><span>바로가기</span></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cont">
+                  <em>
+                    <!-- 아이콘 자리: 원본 icon_filetext_sm (파일 없음) -->
+                    <span></span>
+                    여행기사
+                  </em>
+                  <div class="tit">
+                    <strong
+                      >(연습용 문구) 제목이 두 줄을 넘을 만큼 아주 길면 원본은
+                      두 줄까지만 보여 주고 나머지는 말줄임표로 잘라요</strong
+                    >
+                  </div>
+                  <p>(연습용 문구) 요약 내용이 들어가는 자리예요.</p>
+                  <span class="thumbs">
+                    <img src="assets/images/hero_img_1_6.png" alt="" />
+                  </span>
+                  <a href="#"><span>바로가기</span></a>
+                </div>
               </div>
             </div>
-            <!-- 페이지 -->
-            <div>
-              <!-- 인디케이터 형태의 페이지네이션 -->
+            <!-- 이전 / 다음 버튼 -->
+            <div class="page-btn">
+              <div class="swiper-button-prev">
+                <button class="btn-pg-icon-full-xs" aria-label="이전 카드">
+                  <span class="icon-pg-chevron-xs lt">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M19 9L12 16L5 9"
+                        stroke="#3D3D43"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div class="swiper-button-next">
+                <button class="btn-pg-icon-full-xs" aria-label="다음 카드">
+                  <span class="icon-pg-chevron-xs rt">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M19 9L12 16L5 9"
+                        stroke="#3D3D43"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
             </div>
+            <!-- 점 모양 페이지 표시: 점은 Swiper가 만들어요 -->
+            <div class="swiper-pagination swiper-pagination-bullets"></div>
           </div>
         </section>
 
