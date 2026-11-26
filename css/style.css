@@ -60,17 +60,22 @@ button:focus-visible {
 
 /* header styling start */
 .header {
-  position: relative;
-  width: 100%;
-  height: 90px;
-  background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* width: 100%; */
+  height: var(--header-height);
+  z-index: var(--z-header);
+  background-color: var(--color-white);
+  box-shadow: 1px 1px 6px rgba(26, 26, 26, 0.12);
 }
 .header .inner {
   /* position: relative; */
   width: 100%;
   max-width: 1280px;
   height: 100%;
-  background-color: thistle;
+  /* background-color: thistle; */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -164,10 +169,15 @@ button:focus-visible {
 /* main styling start */
 .main {
   width: 100%;
+  /* margin-top: 90px; */
   /* background-color: wheat; */
 }
-
 /* hero section */
+.hero-sec {
+  margin: 162px auto 0;
+}
+.sw-hero {
+}
 .sw-hero .swiper-slide {
   position: relative;
   width: 940px;
@@ -374,16 +384,16 @@ button:focus-visible {
   /* background-size: auto; */
 }
 .ai-digest .title-wrap {
-  width: var(--layout-max);
   display: flex;
+  width: var(--layout-max);
   align-items: center;
   gap: var(--space-3);
   margin: 0 auto;
 }
 .ai-digest h3 {
   font-size: 26px;
-  letter-spacing: var(--1s-base);
-  line-height: var(--1h-title);
+  letter-spacing: var(--ls-base);
+  line-height: var(--lh-title);
 }
 .ai-digest h3 strong {
   font-weight: var(--fw-extrabold);
@@ -401,10 +411,12 @@ button:focus-visible {
   display: none;
 }
 .sw-ai {
+  position: relative;
+  padding: 37px 0 86px;
 }
 .sw-ai .swiper-wrapper {
   display: flex;
-  /* swiper 설정 값이라 나중에 삭제*/
+  /* swiper 설정 값이라 나중에 삭제 */
   gap: 24px;
   align-items: center;
 }
@@ -413,12 +425,12 @@ button:focus-visible {
   height: 376px;
 }
 .sw-ai .swiper-slide .cont {
+  position: relative;
   height: 100%;
   padding: 52px 36px 0;
   background-color: var(--color-white);
   border-radius: 20px;
   box-shadow: 0 0 20px #d0dbf0;
-  position: relative;
   overflow: hidden;
 }
 .sw-ai .swiper-slide .cont em {
@@ -440,12 +452,10 @@ button:focus-visible {
 .sw-ai .swiper-slide .cont em .icon-filetex-sm {
   flex: 0 0 16px;
   height: 16px;
-  /* color: var(--color-white); */
 }
 .sw-ai .swiper-slide .cont em .icon-filetex-sm svg {
   width: 100%;
   height: 100%;
-  stroke: currentColor;
 }
 .sw-ai .swiper-slide .cont em .icon-filetex-sm svg path {
   stroke: currentColor;
@@ -465,9 +475,23 @@ button:focus-visible {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
-.sw-ai .swiper-slide .cont .p {
+.sw-ai .swiper-slide .cont p {
+  box-sizing: content-box;
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid #e9e9f4;
+  color: var(--color-gray-70);
+  height: 144px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .sw-ai .swiper-slide .cont .thumbs {
   position: absolute;
@@ -483,10 +507,83 @@ button:focus-visible {
   height: 100%;
   object-fit: cover;
 }
-
 .sw-ai .swiper-slide .cont .btn-pg-xs {
+  position: absolute;
+  left: 36px;
+  bottom: 36px;
+  padding: 0 var(--space-3);
+  height: 32px;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--color-text);
+  border-radius: var(--radius-full);
+  background-color: #f3f3fa;
+  display: flex;
+  align-items: center;
 }
-
+.sw-ai .swiper-slide .cont .btn-pg-xs span {
+  /* line-height: 32px; */
+  letter-spacing: normal;
+}
+.sw-ai .page-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  max-width: var(--layout-max);
+  transform: translateX(-50%);
+  z-index: 5;
+}
+.sw-ai .page-btn .swiper-button-prev {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-white);
+  border: 1px solid #949499;
+  transform: translate(-50%, -50%);
+}
+.sw-ai .page-btn .swiper-button-next {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-white);
+  border: 1px solid #949499;
+  transform: translate(50%, -50%);
+}
+.sw-ai .page-btn button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sw-ai .page-btn button span {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sw-ai .page-btn button span.lt {
+  transform: rotate(90deg);
+}
+.sw-ai .page-btn button span.rt {
+  transform: rotate(-90deg);
+}
+.sw-ai .page-btn button span svg {
+  width: 14px;
+  height: 14px;
+}
+.sw-ai .page-btn button span svg path {
+  stroke: #3d3d43;
+  stroke-width: var(--stroke-slide-nav);
+}
 /* main styling end */
 
 /* footer styling start */
